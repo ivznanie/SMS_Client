@@ -12,16 +12,21 @@
 + Хэши паролей по умолчанию в login.csv. Если файла нет, то создается при установке пароля первый раз.
 
 ## Запросы для обращения к API:
+
 ### СМС:
 + отправить смс: http://test.od37.ru/sms/sms/send/?login=79106679925&password=7cb23cd1&phone=79106679925&text=%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%BE
 + получить статус отправленного сообщения: http://test.od37.ru/sms/sms/status/?login=79106679925&password=7cb23cd1&id=4953208191406954340001
 ### Пользователь:
 + новый пароль: http://test.od37.ru/sms/user/newpass/?login=79106679925
 + получить текущий баланс пользователя: http://test.od37.ru/sms/user/balance/?login=79106679925&password=7cb23cd1
-###Сервисные
+### Сервисные
 + версия (релиз): http://test.od37.ru/sms/version/
 + статус сервиса: http://test.od37.ru/sms/status/
-
+### Администратор
++ новый пользователь : http://test.od37.ru/sms/admin/newuser/?login=79106679925&password=7cb23cd1&user=89106451477
++ удалить пользователя : http://test.od37.ru/sms/admin/deluser/?login=79106679925&password=7cb23cd1&user=89106451477
++ активировать пользователья : http://test.od37.ru/sms/admin/useron/?login=79106679925&password=7cb23cd1&user=89106451477
++ деактивировать пользователя : http://test.od37.ru/sms/admin/useroff/?login=79106679925&password=7cb23cd1&user=89106451477
 
 ## Ответы API:
 ###Ответы - успехи:
